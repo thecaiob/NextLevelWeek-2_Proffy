@@ -1,0 +1,75 @@
+/* [CSS] Cascading Style Sheet: Folha de estilo em cascata
+    Respeito das forças de cascata entre os elementos de CSS:
+        ID (valor único, não pode se repetir no documento) > Class > Tag
+        Simbologia dos elementos listados acima: # > . > <h1>
+    E, a depender de como esses elementos estejam em cascata, as preferências também serão distintas.
+*/
+
+/* Configurações de raiz, ou seja, que poderão ser usadas em todo o documento HTML */
+:root {
+    /* Variáveis */
+    --color-background: #F0F0F7;
+    --color-primary-lighter: #9871F5;
+    --color-primary-light: #916BEA;
+    --color-primary: #8257E5;
+    --color-primary-dark: #774DD6;
+    --color-primary-darker: #6842c2;
+    --color-secondary: #04D361;
+    --color-secondary-dark: #04BF58;
+    --color-title-in-primary: #FFFFFF;
+    --color-text-in-primary: #D4C2FF;
+    --color-text-title: #32264D;
+    --color-text-complement: #9C98A6;
+    --color-text-base: #6A6180;
+    --color-line-in-white: #E6E6F0;
+    --color-input-background: #F8F8FC;
+    --color-button-text: #FFFFFF;
+    --color-box-base: #FFFFFF;
+    --color-box-footer: #FAFAFC;
+    --color-small-info: #C1BCCC;
+
+   /* Configuração de fontes:
+        Tamanho padrão: 16px - 100% - 1rem 
+        rem = medida relativa ao que foi configurado como padrão no root */
+    font-size: 60%; /* controle das medidas rem */
+}
+
+/*Configurações Gerais: */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*tamanho da caixa. Nesse caso, ocorre a padronização de tamanho pela borda da caixa, não pelo conteúdo como é o padrão do CSS */
+}
+
+html,
+body {
+    height: 100vh;
+}
+
+body {
+    background-color: var(--color-background);
+    display: flex; /* alguns usados nas tags: block (ocupa toda a linha), inline (um ao lado do outro), flex (muda o fluxo padrão do HTML e deixa os elementos um ao lado do outro)  */
+    align-items: center; /*alinhamento dos itens ao centro do body (100vh) */
+    justify-content: center; /*justifica os conteúdos ao centro */
+
+}
+
+/*Configuração de Fonte */
+body,
+input,
+button,
+textarea {
+    font: 500 1.6rem Poppins; /*Peso (weight), tamanho (size) e fonte (family), respectivamente */
+    color: var(--color-text-base);
+
+}
+
+#container {
+    /* border: ; /* borda da caixa de forma unificada */
+    /* padding: ; /* preenchimento da caixa de forma unificada */
+    /* margin: ; /* margens da caixa de forma unificada */
+
+    width: 90vw; /* largura da caixa */
+    max-width: 700px; /* tamanho máximo pra a largura. Caso passe dos 700px, ela fixa nos 700px e abaixo disso a largura fica relativa a medida acima (90vw) */
+    /* height: ; /* altura da caixa */ 
+}
