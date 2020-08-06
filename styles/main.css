@@ -73,3 +73,10 @@ textarea {
     max-width: 700px; /* tamanho máximo pra a largura. Caso passe dos 700px, ela fixa nos 700px e abaixo disso a largura fica relativa a medida acima (90vw) */
     /* height: ; /* altura da caixa */ 
 }
+
+/* Configuração para fontes em dispositivos móveis */
+@media (min-width: 700px) {
+    :root {
+        font-size: 62.5%; /* Todo 1rem é equivalente a 10px */
+    }
+}

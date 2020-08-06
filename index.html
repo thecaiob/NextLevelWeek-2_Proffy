@@ -9,18 +9,43 @@
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proffy | Sua plataforma de estudos online</title> <!-- título da página (aba do navegador) -->
-    <link rel="stylesheet" href="/style.css"> <!-- tag para puxar o link do CSS de um arquivo de fora -->
+    
+    <link rel="stylesheet" href="/styles/main.css"> <!-- tag para puxar o link do CSS de um arquivo de fora -->
+    <link rel="stylesheet" href="/styles/partials/page-landing.css">
+    
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet"> <!-- Tag de link para a fonte que será usada no CSS -->
 </head>
 
 <body id="page-landing"><!-- uma das tags principais do HTML -> conteúdo visível -->
     
     <div id="container"> <!--Caixa de auxílio de estilização-->
-        <h1>Proffy</h1> <!-- tag de heading, ou seja, para títulos -->
-        <p>Sua plataforma de estudos online</p> <!-- tag de paragraph, ou seja, de texto -->
-        <img src="" alt="Logo"> <!-- tag de imagem, contendo a fonte (source - src) e uma alternativa a mesma (alt, que também é usado pra deficientes visuais) -->
-        <button>Estudar</button> <!-- tag de botão -->
-        <button>Dar aulas</button>
+        
+        <div class="logo-container"> <!--Emmet gera divs com classes automáticas a partir da digitação do ponto (.) seguido do nome da classe desejada-->
+            <img src="/images/logo.svg" alt="Proffy">
+            <h2>Sua plataforma de estudos online</h2>
+        </div>
+        <img class= "hero-image" src="/images/landing.svg" alt="Plataforma de Estudos"> <!--Imagem da página principal-->
+        
+        <div class="buttons-container">
+            <a class= "study" href="/study.html"> <!--tag correspondente a hyperlinks-->
+                <img src="/images/icons/study.svg" alt="Estudar">
+                Estudar
+            </a>
+            <a class="give-classes" href="/give-classes.html">
+                <img src="/images/icons/give-classes.svg" alt="Dar aulas">
+                Dar aulas
+            </a>
+        </div>
+
+        <p class="total-connections">
+            Total de conexões já realizadas
+            <img src="/images/icons/purple-heart.svg" alt="Coração Roxo">
+        </p>
+        <!-- <h1>Proffy</h1>: tag de heading, ou seja, para títulos -->
+        <!-- <p>Sua plataforma de estudos online</p>:tag de paragraph, ou seja, de texto -->
+        <!--<img src="" alt="Logo">: tag de imagem, contendo a fonte (source - src) e uma alternativa a mesma (alt, que também é usado pra deficientes visuais) -->
+        <!--<button>Estudar</button>: tag de botão -->
+        
     </div>
      
 </body>
